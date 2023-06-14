@@ -1,0 +1,121 @@
+doctype html
+html
+  head
+    title Anti-tabac - Página Inicial
+    style
+      | .timeline {
+      |   list-style-type: none;
+      |   padding: 0;
+      |   display: flex;
+      |   justify-content: space-between;
+      |   align-items: center;
+      | }
+      |
+      | .timeline li {
+      |   margin-bottom: 20px;
+      |   padding: 10px;
+      |   background-color: #fff;
+      |   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      |   flex: 1;
+      |   text-align: center;
+      | }
+      |
+      | .timeline li:not(:last-child) {
+      |   margin-right: 20px;
+      | }
+      |
+      | .timeline li:before {
+      |   content: "";
+      |   display: block;
+      |   width: 10px;
+      |   height: 10px;
+      |   background-color: #333;
+      |   border-radius: 50%;
+      |   margin: 0 auto 10px;
+      | }
+      |
+      | .timeline li:nth-child(even) {
+      |   color: #777;
+      |   background-color: #f9f9f9;
+      | }
+      |
+      | .dropdown {
+      |   text-align: center;
+      |   margin-bottom: 20px;
+      | }
+      |
+      | .dropdown select {
+      |   padding: 10px;
+      |   font-size: 16px;
+      |   border: 1px solid #ccc;
+      |   border-radius: 4px;
+      | }
+      | .timeline li.selected {
+      |   background-color: #754242;
+      | }
+
+    link rel="stylesheet" type="text/css" href="/application.css"
+    link rel="stylesheet" type="text/css" href="/buttons.css"
+    = javascript_include_tag "custom"
+    = javascript_include_tag "selected_timeline"
+  body
+    .navbar
+      ul
+        li
+          a href="tabagismo" Tabagismo
+        li
+          a href="saude" Saude
+        li
+          a href="process" Processo
+        li
+          a href="statistics" Estatísticas
+        li
+          a href="about" Contato
+    
+    .container
+        h1 Dicas e Estratégias para Superar os Desafios da Cessação do Uso de Tabaco/Cigarro
+
+        div
+            p Estabeleça uma data para parar de fumar: Defina uma data específica para parar de fumar e mantenha-se comprometido com esse objetivo. Escolha um dia que seja significativo para você e que ofereça tempo suficiente para se preparar mentalmente.
+
+            p Busque apoio social: Informe seus amigos, familiares e colegas de trabalho sobre sua decisão de parar de fumar. Peça apoio e compreensão durante o processo. Considerar se juntar a grupos de apoio ou buscar aconselhamento profissional também pode ser benéfico.
+
+            p Identifique seus gatilhos e evite-os: Identifique os momentos, pessoas ou situações que costumam desencadear o desejo de fumar. Pode ser o café da manhã, o happy hour com os amigos ou o estresse no trabalho. Encontre alternativas saudáveis para lidar com esses gatilhos, como beber água, praticar exercícios ou buscar atividades relaxantes.
+
+            p Encontre substitutos saudáveis: Busque alternativas saudáveis ​​para substituir o ato de fumar. Mastigar chicletes sem açúcar, chupar balas de menta ou carregar um objeto para mexer nas mãos, como uma caneta, pode ajudar a reduzir a ansiedade e a vontade de fumar.
+
+            p Pratique técnicas de relaxamento: O estresse é um fator comum que leva as pessoas a fumar. Aprenda técnicas de relaxamento, como meditação, ioga, respiração profunda ou banhos quentes, para reduzir a ansiedade e lidar de maneira saudável com o estresse.
+
+            p Mantenha-se ocupado: Distraia-se mantendo-se ocupado com atividades que você gosta. Envolva-se em hobbies, faça exercícios físicos, leia livros, assista a filmes ou encontre maneiras criativas de ocupar seu tempo livre.
+
+            p Recompense-se: Defina metas alcançáveis ​​e recompense-se ao atingi-las. Reserve o dinheiro que você economizou ao não comprar cigarros e use-o para comprar algo que você deseja ou desfrute de uma atividade especial.
+
+            p Seja resiliente e não desista: Lembre-se de que superar o vício em tabaco é um processo. Pode haver momentos de recaída, mas não desanime. Se mantenha focado em seu objetivo e lembre-se dos benefícios de parar de fumar para a sua saúde e bem-estar.
+
+        h2 Benefícios de Parar de Fumar
+        form
+        label for="comparacao" Tipo de comparação:
+        select id="comparacao" name="comparacao" onchange="showOptions()"
+            option value="" Selecione uma opção
+            option value="minutos" Minutos
+            option value="horas" Horas
+            option value="dias" Dias
+            option value="meses" Meses
+            option value="anos" Anos
+
+        br
+        label for="opcoes" Opções:
+        select id="opcoes"
+        
+        ul.timeline class="timeline"
+            li Após 20 minutos, sua pressão sanguínea e a pulsação voltam ao normal.
+            li Após 2 horas, não há mais nicotina no seu sangue.
+            li Após 8 horas, o nível de oxigênio no sangue se normaliza.
+            li Após 2 dias, seu olfato já percebe melhor os cheiros e seu paladar já degusta a comida melhor.
+            li Após 3 semanas, a respiração fica mais fácil e a circulação sanguínea melhora.
+            li Após 10 anos, o risco de sofrer infarto do coração será igual ao de quem nunca fumou, e o risco de desenvolver câncer de pulmão cai à metade.
+            li Após 20 anos, o risco de desenvolver câncer de pulmão será quase igual ao de quem nunca fumou.
+
+    .footer
+        p &copy; 2023 Anti-tabac. Todos os direitos reservados.
+

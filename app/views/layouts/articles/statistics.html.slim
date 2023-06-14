@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    title Anti-tabac - Página Inicial
+    style
+      | table {
+      |   border-collapse: collapse;
+      |   width: 40%;
+      | }
+      | th, td {
+      |   padding: 8px;
+      |   text-align: left;
+      |   border-bottom: 1px solid #ddd;
+      | }
+    link rel="stylesheet" type="text/css" href="/application.css"
+    link rel="stylesheet" type="text/css" href="/buttons.css"
+  body
+    .navbar
+      ul
+        li
+          a href="tabagismo" Tabagismo
+        li
+          a href="saude" Saude
+        li
+          a href="process" Processo
+        li
+          a href="statistics" Estatísticas
+        li
+          a href="about" Contato
+    
+    .container
+        h1 Estatísticas sobre Tabagismo e seus Efeitos na Saúde
+
+        h2 Introdução
+        p Abaixo estão algumas estatísticas sobre o tabagismo e seus efeitos prejudiciais à saúde:
+
+        h2 Estatísticas Globais
+        ul
+        li Segundo a Organização Mundial da Saúde (OMS), estima-se que o tabagismo seja responsável por mais de 8 milhões de mortes a cada ano em todo o mundo.
+        li O tabagismo é a principal causa evitável de morte prematura em todo o mundo.
+        li 
+            | Estima-se que o tabagismo seja responsável por cerca de 443(
+            a href="https://www.gov.br/inca/pt-br/assuntos/causas-e-prevencao-do-cancer/tabagismo" Fonte
+            | ) mortes por dia no Brasil.
+        h2 Quantidade de "Viciados"
+        p De acordo com pesquisas recentes:
+        ul
+        li 
+            | Atualmente, estima-se que existam cerca de 1,1 bilhão(
+            a href="https://www.paho.org/pt/topicos/tabaco" Fonte
+            | ) fumantes em todo o mundo.
+        li 
+            | No Brasil, aproximadamente 9,1%(
+            a href="https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/observatorio-da-politica-nacional-de-controle-do-tabaco/dados-e-numeros-do-tabagismo/prevalencia-do-tabagismo" Fonte
+            | ) da população adulta é fumante, sendo 11,8% entre homens e 6,7% entre mulheres.
+        
+        h2 Efeitos na Saúde
+        p O tabagismo está relacionado a uma série de problemas de saúde, incluindo:
+        ul
+        li Doenças cardiovasculares, como doenças cardíacas e acidentes vasculares cerebrais (AVCs).
+        li Câncer de pulmão, boca, garganta, esôfago, pâncreas, rim, bexiga e colo do útero, entre outros.
+        li Doenças respiratórias, como enfisema e bronquite crônica.
+        li Complicações na gravidez, incluindo parto prematuro e baixo peso ao nascer.
+        li Doenças periodontais e perda de dentes.
+
+        h2 Gastos
+        p O tabaco é um problema não so a sua saúde mas tambem a sua economia, pois um vício não é barato manter.
+        p 
+            | Ainda de acordo com a cardiologista(
+            a href="https://coracaoevida.com.br/quanto-voce-gasta-com-cigarro/" Fonte
+            | ), a média de consumo brasileira é de cerca de 20 cigarros por dia, ou seja, um maço. O preço médio do maço, por sua vez, é de R$ 6.
+        table
+            thead
+                tr
+                    th>Período
+                    th>Gastos
+            tbody
+                tr
+                    td>Semana
+                    td>#{6.75 * 7}
+                tr
+                    td>Mês
+                    td>#{6.75 * 30}
+                tr
+                    td>Ano
+                    td>#{6.75 * 365}
+                tr
+                    td>5 Anos
+                    td>#{6.75 * 365 * 5}
+                tr
+                    td>10 Anos
+                    td>#{6.75 * 365 * 10}
+                tr
+                    td>20 Anos
+                    td>#{6.75 * 365 * 20}
+
+    .footer
+      p &copy; 2023 Anti-tabac. Todos os direitos reservados.
