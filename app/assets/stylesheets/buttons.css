@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .govbr-card-content {
+    margin: 0 16px 32px;
+  }
+
+  .govbr-card-content {
+    margin: 0 12px 24px;
+  }
+
+  .govbr-card-content {
+    -ms-flex-align: center;
+    align-items: center;
+    background: #f8f8f8;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    box-sizing: border-box;
+    color: #000;
+    display: -ms-flexbox;
+    justify-content: center;
+    margin: 0 8px 16px;
+    padding: 12px;
+    cursor: pointer;
+  }

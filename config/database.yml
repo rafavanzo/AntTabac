@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: AntTabac_production
-  username: AntTabac
-  password: <%= ENV["ANTTABAC_DATABASE_PASSWORD"] %>
+  url:  <%= ENV["DATABASE_URL"] %>
